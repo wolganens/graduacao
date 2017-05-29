@@ -171,7 +171,7 @@ class Afd(object):
 		#novo estado inicial
 		self.start_state = self.get_new_state(self.start_state)
 
-	#retorna o novo nome do estado
+	#retorna o novo nome do estado apos a minimizacao
 	def get_new_state(self, s):
 		for state in self.states:		
 			if s in state:
@@ -187,8 +187,12 @@ class Afd(object):
 		print self.start_state
 		print "\nEstados finais"
 		print self.final_states
-		#EXIBIR MORTOS E INACESSIVEIS
+		print "\nEstados mortos:"
+		print afd.dead_states
+		print "\nEstados inalcancaveis:"
+		print afd.unreachables
 		print "\n"
+	#funcao para gerar arquivo pdf com o grafo do automato
 	def export_graph(self):
 		dot = Digraph()
 		for state in self.states:
@@ -250,5 +254,6 @@ while nb != 1:
 			print "O automato ja foi minimizado"
 		else:
 			afd.minimize()
+			afd.show_afd_info()			
 	elif nb == 4:
 		afd.export_graph()
