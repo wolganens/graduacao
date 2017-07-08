@@ -1,0 +1,26 @@
+{
+	"name": "Name",
+	"save": "Save",
+	"delete": "Delete",
+	"add": "New Travel",
+	"add_item": "Add items",
+	"sure": "Are you sure?!",
+	"yes": "Yes",
+	"no": "No",
+	"category": "Category",
+	"success_delete": "Successfully removed!",
+	"failed_added": "Failed to add!",
+	"success_added": "Successfully added!",
+	"success_added": "Successfully changed!",
+	"signin": {
+		"google": "Sign in with Google",
+		"facebook" : "Sign in with Facebook"
+	},
+	"useraccounts":{
+		"atTitle": {
+			"subtitle": "teste"
+		}
+	},
+	"daily": "Daily",
+	"fixed": "Fixed"
+}

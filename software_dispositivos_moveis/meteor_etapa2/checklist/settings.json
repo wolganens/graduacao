@@ -1,0 +1,16 @@
+{
+    "public": {      
+    },
+    "private": {
+        "oAuth": {
+            "facebook": {
+                "appId": "125636898035650",
+                "secret": "352fc5e6ec412127796aca14721f327a"
+            },    
+            "google": {
+                "clientId": "784999904557-jk8n30rhi5ehu31pgrt9dkniu8p8i27j.apps.googleusercontent.com",
+                "secret": "HqzoXctDQ9lgDgr2f4uBSFJc"
+            }        
+        }
+    }
+}

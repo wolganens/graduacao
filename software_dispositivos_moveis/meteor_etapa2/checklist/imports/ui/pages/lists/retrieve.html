@@ -1,0 +1,8 @@
+<template name="listRetrieve">
+	<h1>Minhas listas:</h1>
+	<ul class="list-group">
+		{{#each lists}}
+			<li class="list-group-item">{{> listSingle }}</li>			
+		{{/each}}
+	</ul>
+</template>

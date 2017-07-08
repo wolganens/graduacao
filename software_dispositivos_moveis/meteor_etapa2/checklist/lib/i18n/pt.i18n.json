@@ -1,0 +1,26 @@
+{
+	"name": "Nome",
+	"save": "Salvar",
+	"delete": "Apagar",
+	"add": "Nova viagem",
+	"add_item": "Adicionar itens",
+	"sure": "Têm certeza?!",
+	"yes": "Sim",
+	"no": "Não",
+	"category": "Categoria",
+	"success_delete": "Removido com sucesso!",
+	"failed_added": "Falha ao adicionar!",
+	"success_added": "Adicionado com sucesso!",
+	"success_changed": "Alterado com sucesso!",
+	"signin": {
+		"google": "Entrar com o Google",
+		"facebook" : "Entrar com o  Facebook"
+	},
+	"useraccounts":{
+		"atTitle": {
+			"subtitle": "teste"
+		}
+	},
+	"daily": "Diário",
+	"fixed": "Fixo"
+}

@@ -1,0 +1,10 @@
+<template name="listCreate">
+	<form action="#" id="list-create-form" class="form-inline">		
+		<div class="form-group">
+			<label for="name" class="control-label">{{_ "name"}}</label>
+			<input type="text" class="form-control" name="name" id="#name" placeholder="Digite o nome da lista. Ex: Alimentação, Roupas de Inverno, etc" style="min-width: 70vw;">
+		</div>		
+		<button type="submit" class="btn btn-primary btn-raised">{{_ "save" }}</button>
+	</form>	
+	{{> listRetrieve }}
+</template>

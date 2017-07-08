@@ -1,0 +1,33 @@
+<template name="homeLayout">
+	{{#if currentUser}}
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="row">
+				<div class="col-xs-3">
+					<a id="side-open" href="#"><i class="material-icons">menu</i></a>
+				</div>
+				<div class="col-xs-9">
+					<strong>{{> Template.dynamic template=title}}</strong>
+				</div>
+			</div>			
+		</nav>
+	{{/if}}	
+	<div id="side-menu-bg"></div>
+	<div id="side-menu">
+		<div id="menu-header">
+			{{{ userPicture }}}
+			<strong>{{userIdentity}}</strong>
+		</div>
+		<ul>
+			<li><a href="/travels"> <i class="material-icons">flight_takeoff</i> Minhas viagens</a></li>
+			<li><a href="/categories"> <i class="material-icons">label_outline</i>Categorias</a></li>
+			<li><a href="/items"><i class="material-icons">card_travel</i> Itens</a></li>
+			<li><a id="logout" href="/"><i class="material-icons">keyboard_return</i> Sair</a></li>
+			<li class="separator"><hr></li>
+			<li><a href="#" data-language="en">Inglês</a></li>
+			<li><a href="#" data-language="pt">Portugues</a></li>
+		</ul>
+	</div> 
+    <div class="container">
+        {{> Template.dynamic template=main}}
+    </div>
+</template>

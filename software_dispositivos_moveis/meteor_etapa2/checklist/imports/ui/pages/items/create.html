@@ -1,0 +1,32 @@
+<template name="itemCreate">
+	<form action="#" id="cat-create-form" class="form-inline">		
+		<div class="form-group">
+			<label for="name" class="control-label">{{_ "name"}}</label>
+			<input type="text" class="form-control" name="name" id="#name" placeholder="Digite o nome do item">
+		</div>
+		<div class="form-group">
+			<label for="category">{{_ "category"}}</label>
+			<select type="text" name="category" id="category" class="form-control" value="" required="required">
+				{{#each category in categories}}
+					<option value="{{ category._id }}">{{category.name}}</option>
+				{{/each}}
+			</select>
+		</div>
+		<div class="form-group">			
+			<div class="togglebutton">
+				<label>
+					<input type="checkbox" name="daily" checked> {{_ "daily" }}
+				</label>
+			</div>			
+		</div>
+		<div class="form-group">			
+			<div class="togglebutton">
+				<label>
+					<input type="checkbox" name="fixed" checked> {{_ "fixed" }}
+				</label>
+			</div>			
+		</div>
+		<button type="submit" class="btn btn-primary btn-raised">{{_ "save" }}</button>
+	</form>	
+	{{> itemRetrieve }}
+</template>

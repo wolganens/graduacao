@@ -1,0 +1,106 @@
+#__blaze-root{
+	#side-menu{
+		position: absolute;
+		z-index: 9999;
+		width: 80%;
+		height: 100%;
+		top: 0;
+		left: -80%;
+		-webkit-transition: left 0.4s;
+		-o-transition: left 0.4s;
+		transition: left 0.4s;
+		bottom: 0;
+		background: white;
+		#menu-header{
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				display: block;
+				margin: 2% 0;
+			}
+			color: white;
+			background: url("/img/drawer-bg.jpg");
+			background-size: cover;
+			height: 25vh;
+			padding: 2%
+		}
+		ul{
+			padding: 10px;
+			margin: 0;
+			list-style-type: none;
+			li {
+				margin: 5px 0;
+				a {
+					color: #000;
+					font-weight: 400;
+					font-size: 16px;
+					i {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	#side-menu-bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.75);
+		width: 100%;
+		height: 100%;
+		z-index: 9998;
+		display: none;
+	}
+}
+#__blaze-root.open{
+	#side-menu{
+		position: absolute;
+		z-index: 9999;
+		width: 80%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		-webkit-transition: left 0.4s;
+		-o-transition: left 0.4s;
+		transition: left 0.4s;
+		bottom: 0;
+		background: white;
+		#menu-header{
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				display: block;
+				margin: 2% 0;
+			}
+			color: white;
+			background: url("/img/drawer-bg.jpg");
+			background-size: cover;
+			height: 25vh;
+			padding: 2%
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			li {
+				margin: 5px 0;
+				a {
+					color: #000;
+					font-weight: 400
+				}
+			}
+		}
+	}
+	#side-menu-bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.75);
+		width: 100%;
+		height: 100%;
+		z-index: 9998;
+		display: block;
+	}
+}

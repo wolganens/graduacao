@@ -1,0 +1,32 @@
+body {
+	background-color: #fff !important;
+}
+.list-group-item{
+	border-bottom: 1px solid #dedede !important;
+}
+.editable-text{
+	border-bottom: 3px dotted #367ad2;
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px 0
+}
+.wide-text-edit{
+	border: 2px dotted #aaa;
+	padding: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+.navbar-default {
+	a , span, strong{
+	display: block;
+	color: white;
+	font-size: 20px;
+	line-height: 50px;
+
+	}
+
+}
+.checked .item-name {
+	text-decoration: line-through;
+	opacity: 0.5;
+}

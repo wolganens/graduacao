@@ -1,0 +1,19 @@
+<template name="homePage">
+	<div class="text-center">
+		<h3>Bem vindo ao Viajando Legal</h3>
+		<p>Acesse sua conta:</p>
+	</div>
+	{{>signInWithEmailModal}}
+	<ul class="btn-list" style="list-style-type: none;padding: 0;margin: 0;">
+		<li>
+			<a href="#" data-social-login="loginWithFacebook" type="button" class="btn-block btn-raised btn-info btn btn-default">
+				<i class="fa fa-facebook"></i> {{_"signin.facebook" }}
+			</a>
+		</li>
+		<li>
+			<a href="#" data-social-login="loginWithGoogle" type="button" class="btn-block btn-raised btn-danger btn btn-default">
+				<i class="fa fa-google"></i> {{_"signin.google" }}
+			</a>
+		</li>
+	</ul>
+</template>

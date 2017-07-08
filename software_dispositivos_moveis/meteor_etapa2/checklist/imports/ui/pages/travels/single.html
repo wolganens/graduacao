@@ -1,0 +1,7 @@
+<template name="travelSingle">
+	{{>delete}}
+	<a href="/travels/single/{{_id}}" class="pull-right btn btn-sm btn-default">
+		<i class="glyphicon glyphicon-list"></i>
+	</a>
+	<span class="pull-left">{{> editableText collection="Travels" field="description"}}</span>
+</template>

@@ -1,0 +1,15 @@
+<template name="travelRetrieve">
+	<a href="/travels/create" class="waves-effect delete btn-raised waves-light btn btn-primary">
+		<i class="glyphicon glyphicon-plane"></i> {{_ "add"}}
+	</a>
+
+	<ul class="list-group">
+		{{#each travels}}
+			<li class="list-group-item">{{> travelSingle }}</li>
+		{{else}}
+			<li class="alert alert-info">
+				Você não tem nenhuma viagem!
+			</li>
+		{{/each}}
+	</ul>
+</template>

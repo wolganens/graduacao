@@ -1,0 +1,10 @@
+<template name="categoryCreate">
+	<form action="#" id="cat-create-form" class="form-inline">		
+		<div class="form-group">
+			<label for="name" class="control-label">{{_ "name"}}</label>
+			<input type="text" class="form-control" name="name" id="#name" placeholder="Digite o nome da categoria">
+		</div>
+		<button type="submit" class="btn btn-primary btn-raised">{{_ "save" }}</button>
+	</form>	
+	{{> categoryRetrieve }}
+</template>
