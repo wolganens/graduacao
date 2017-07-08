@@ -1,0 +1,16 @@
+Aplicação meteor da disciplina de software para dispositivos moveis.
+Luana Cadaval
+Wolgan Ens Quepfert
+
+Tem que instalar as dependencias npm
+npm install e meteor npm install
+
+Verificar se o meteor está atualizado, acredito que com: meteor update resolva.
+
+Pra rodar a aplicação:
+
+web:
+meteor --settings settings.json
+
+emulador android:
+meteor run android --settings settings.json
